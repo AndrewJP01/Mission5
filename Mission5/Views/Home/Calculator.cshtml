@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Do some Calculating";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>This is all about playing with a calculator.</p>
+
+<div class="calculator">
+    <h2>Tutoring Cost Calculator</h2>
+    <label for="hours">Number of Hours Needed:</label>
+    <input type="number" id="hours" placeholder="Enter hours" min="1">
+    <div class="error" id="error"></div>
+
+    <label for="rate">Your Hourly Rate:</label>
+    <input type="text" id="rate" value="$50" readonly>
+
+    <button id="calculate">Calculate Total</button>
+
+    <div class="output">
+        Total Cost: <span id="total">$0.00</span>
+    </div>
+</div>
